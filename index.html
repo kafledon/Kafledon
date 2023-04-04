@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML Assignment</title>
+	<script type="text/javascript">
+	  function resizeIframe(obj) {
+		obj.style.height = screen.height*2.8/4 + 'px';
+		
+	  }
+	</script>
+	<style type=text/css>
+		body {
+			font: 1.0em verdana, arial, sans-serif;
+			background-image:url(sky.jpeg);
+			background-size: auto;
+		}
+		* {	
+			margin:0px;
+			padding:0px;
+		}
+		div#header {
+			width:100%;
+			height:32px;
+			background-image: url(sky.jpeg);
+			text-align:center;
+			font-size:1em;
+			padding-top:2px;
+			padding-bottom:8px;
+			color:white;
+			border-bottom: 1px solid white;
+			font-family: Georgia, 'Times New Roman', Times, serif;
+		}
+		
+		div#column2 {font-size:0.8em;}
+		
+		div#contentarea {
+			width:90%;
+			background-color:#FFF;
+			background-image:url(sky.jpeg);
+		}
+		
+		div#nav {
+			padding: 0.5em 0 0 0;
+			background-image:url(sky.jpeg);
+		}
+		
+		div#nav ul {
+			margin-left:20px;
+			margin-top:0;
+			margin-bottom:0.8em;
+			list-style-type:none;
+		}
+		
+		div#nav li {
+			margin-bottom:0.5em;
+			font-weight:bold;
+			font-size:0.75em;	
+			background-image: url(sky.jpeg);
+			text-align: center;
+			width:155px; 
+			height:20px; 
+			padding-top: 5px;
+			border-radius: 10px;
+		}
+			
+		div#nav li a:link {
+			text-decoration:none;
+			color:white;
+		}
+		
+		div#nav li:hover {
+			background-image: url(sky1.webp);
+		}
+	
+		div#column1 {
+			width:20%;
+			float:left;
+		}
+		div#column2 {
+			width:80%;
+			background-color:#FFF;
+			float:left;
+		}
+		
+		div#column2 iframe {
+			width:100%;
+		}
+		
+		
+		#footer {
+			width:100%;
+			text-align:center;
+			font-size:1.1em;
+			padding:0.1em 0;
+			color: white;
+		}
+		
+		.clearfloat {
+			clear:both;
+		}
+		.center {
+			margin-left:auto;
+			margin-right:auto;
+		}
+		
+		.clearfix:after {
+			content: ".";
+			display:block;
+			height:0;
+			clear:both;
+			visibility:hidden;
+		}
+		
+		.clearfix {display: inline-table;}
+		
+	</style>
+</head>
+<body>
+	<div id="header" class="center">
+		<h1>Welcome to Kafle Manis' Page</h1>
+	</div>
+
+	<div id="contentarea" class="center">
+		<div id="column1">
+			<div id="nav">
+				<ul>
+					<li><a href="homepage.html" target="xspace">Home</a></li>
+					<li><a href="portfolio.html" target="xspace">ُPersonal Portfolio</a></li>
+					<li><a href="Hobbies.html" target="xspace">Hobbies</a></li>
+				</ul>
+			</div>
+		</div>
+		<div id="column2">
+			<iframe name="xspace" src="homepage.html"
+			frameborder="0" scrolling="yes" onload="resizeIframe(this);">
+			</iframe>
+		</div>
+		<div class="clearfloat">
+			<!-- purposely added to clear float -->
+		</div>
+	</div>
+	<div id="footer" class="center">
+		Kafle Manis' Homepage
+	</div>
+</body>
+</html>
